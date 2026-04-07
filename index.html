@@ -37,36 +37,46 @@
 
   <section class="bundeslaender-section" id="bundeslaender">
     <div class="container">
-      <h2>Bundesländer auswählen</h2>
+      <h2>Bundesland auswählen</h2>
       <p class="section-text">
-        Wähle dein Bundesland und lade später die passende PDF-Version mit den
-        zusätzlichen 10 landesspezifischen Fragen herunter.
+        Wähle dein Bundesland aus und kaufe danach die passende PDF-Version.
       </p>
 
-      <div class="bundeslaender-grid">
-        <button class="bundesland-btn">Baden-Württemberg</button>
-        <button class="bundesland-btn">Bayern</button>
-        <button class="bundesland-btn">Berlin</button>
-        <button class="bundesland-btn">Brandenburg</button>
-        <button class="bundesland-btn">Bremen</button>
-        <button class="bundesland-btn">Hamburg</button>
-        <button class="bundesland-btn">Hessen</button>
-        <button class="bundesland-btn">Mecklenburg-Vorpommern</button>
-        <button class="bundesland-btn">Niedersachsen</button>
-        <button class="bundesland-btn">Nordrhein-Westfalen</button>
-        <button class="bundesland-btn">Rheinland-Pfalz</button>
-        <button class="bundesland-btn">Saarland</button>
-        <button class="bundesland-btn">Sachsen</button>
-        <button class="bundesland-btn">Sachsen-Anhalt</button>
-        <button class="bundesland-btn">Schleswig-Holstein</button>
-        <button class="bundesland-btn">Thüringen</button>
-      </div>
+      <select id="bundesland-select" class="bundesland-select">
+        <option value="">Bitte Bundesland wählen</option>
+        <option value="Baden-Württemberg">Baden-Württemberg</option>
+        <option value="Bayern">Bayern</option>
+        <option value="Berlin">Berlin</option>
+        <option value="Brandenburg">Brandenburg</option>
+        <option value="Bremen">Bremen</option>
+        <option value="Hamburg">Hamburg</option>
+        <option value="Hessen">Hessen</option>
+        <option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+        <option value="Niedersachsen">Niedersachsen</option>
+        <option value="Nordrhein-Westfalen">Nordrhein-Westfalen</option>
+        <option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
+        <option value="Saarland">Saarland</option>
+        <option value="Sachsen">Sachsen</option>
+        <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+        <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+        <option value="Thüringen">Thüringen</option>
+      </select>
 
-      <div class="bundesland-card">
-        <h3>Bundesland PDF</h3>
-        <p>Zusätzliche 10 Fragen für dein ausgewähltes Bundesland als PDF.</p>
+      <div class="bundesland-card" id="bundesland-card" style="display: none;">
+        <h3 id="bundesland-title">Bundesland PDF</h3>
+        <p>
+          PDF mit allgemeinen Fragen und zusätzlichen Fragen für dein ausgewähltes Bundesland.
+        </p>
         <div class="mini-price">9,90 €</div>
-        <a href="#" class="btn btn-primary">Bundesland PDF kaufen</a>
+        <a
+          href="https://buy.stripe.com/14AbJ20qF0Sz08CeSN9Ve00"
+          id="bundesland-buy-btn"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PDF kaufen
+        </a>
       </div>
     </div>
   </section>

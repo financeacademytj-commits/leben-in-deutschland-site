@@ -1,30 +1,18 @@
-const bundeslandButtons = document.querySelectorAll(".bundesland-btn");
-const bundeslandCardTitle = document.querySelector(".bundesland-card h3");
-const bundeslandBuyBtn = document.querySelector(".bundesland-card .btn");
+const select = document.getElementById("bundesland-select");
+const card = document.getElementById("bundesland-card");
+const title = document.getElementById("bundesland-title");
+const buyBtn = document.getElementById("bundesland-buy-btn");
 
-let selectedBundesland = null;
+select.addEventListener("change", () => {
+  const value = select.value;
 
-const stripeLink = "https://buy.stripe.com/14AbJ20qF0Sz08CeSN9Ve00";
-
-bundeslandButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const name = btn.textContent.trim();
-
-    bundeslandButtons.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    selectedBundesland = name;
-    bundeslandCardTitle.textContent = `${name} PDF`;
-    bundeslandBuyBtn.textContent = `${name} PDF kaufen`;
-    bundeslandBuyBtn.href = stripeLink;
-    bundeslandBuyBtn.setAttribute("target", "_blank");
-    bundeslandBuyBtn.setAttribute("rel", "noopener noreferrer");
-  });
-});
-
-bundeslandBuyBtn.addEventListener("click", (e) => {
-  if (!selectedBundesland) {
-    e.preventDefault();
-    alert("Bitte zuerst ein Bundesland auswählen.");
+  if (value) {
+    title.textContent = value + " PDF";
+    buyBtn.textContent = value + " PDF kaufen";
+    card.style.display = "block";
+  } else {
+    title.textContent = "Bundesland PDF";
+    buyBtn.textContent = "PDF kaufen";
+    card.style.display = "none";
   }
 });
