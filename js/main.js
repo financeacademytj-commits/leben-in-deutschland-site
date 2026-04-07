@@ -2,8 +2,6 @@ const bundeslandButtons = document.querySelectorAll(".bundesland-btn");
 const bundeslandCardTitle = document.querySelector(".bundesland-card h3");
 const bundeslandBuyBtn = document.querySelector(".bundesland-card .btn");
 
-const gesamtPdfBtn = document.querySelector("#gesamt-pdf-btn");
-
 let selectedBundesland = null;
 
 const bundeslandLinks = {
@@ -46,8 +44,3 @@ bundeslandBuyBtn.addEventListener("click", (e) => {
     alert("Bitte zuerst ein Bundesland auswählen.");
   }
 });
-
-if (gesamtPdfBtn) {
-  gesamtPdfBtn.href = "assets/pdfs/gesamt-pdf.pdf";
-  gesamtPdfBtn.setAttribute("target", "_blank");
-}
