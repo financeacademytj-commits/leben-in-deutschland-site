@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1d4ed8, #60a5fa);
+  color: white;
+  padding: 72px 0;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: 58px;
+  line-height: 1.02;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.65;
+  max-width: 700px;
+  margin: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 24px;
+  border-radius: 16px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: white;
+  color: #1d4ed8;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn-light {
+  background: white;
+  color: #1d4ed8;
+}
+
+.btn-full {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 360px;
+  margin-left: auto;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+}
+
+.features,
+.screenshots,
+.pdf-block,
+.bundeslaender-section {
+  padding: 78px 0;
+}
+
+.features h2,
+.screenshots h2,
+.pdf-block h2,
+.bundeslaender-section h2 {
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 40px;
+}
+
+.section-text {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 34px;
+  color: #4b5563;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.bundeslaender-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 34px;
+}
+
+.bundesland-btn {
+  padding: 16px 18px;
+  border: none;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bundesland-btn:hover {
+  transform: translateY(-2px);
+  background: #eef4ff;
+}
+
+.bundesland-card {
+  max-width: 420px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  padding: 28px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.24);
+}
+
+.bundesland-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.bundesland-card p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.mini-price {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 26px;
+  border-radius: 22px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.pdf-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.pdf-block {
+  background: #ffffff;
+}
+
+.pdf-list {
+  padding-left: 22px;
+}
+
+.pdf-list li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.price-card {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  padding: 30px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.25);
+}
+
+.price-label {
+  font-size: 15px;
+  opacity: 0.92;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price {
+  font-size: 58px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.screenshots-grid img {
+  border-radius: 24px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+.footer {
+  background: #111827;
+  color: white;
+  padding: 36px 0;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 24px;
+}
+
+.footer h3 {
+  margin-top: 0;
+}
+
+.footer p {
+  color: rgba(255,255,255,0.82);
+  line-height: 1.7;
+}
+
+@media (max-width: 980px) {
+  .hero-content,
+  .pdf-inner,
+  .feature-grid,
+  .screenshots-grid,
+  .bundeslaender-grid,
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-image img {
+    margin: 0 auto;
+  }
+
+  .features h2,
+  .screenshots h2,
+  .pdf-block h2,
+  .bundeslaender-section h2 {
+    font-size: 32px;
+  }
+}
+
+.bundesland-btn.active {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
